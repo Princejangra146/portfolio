@@ -12,16 +12,18 @@ import Works from "./components/Works";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
+      <div className='relative min-h-screen bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className='relative z-0'>
+        <div className='min-h-screen'>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+        </div>
+        <div className='min-h-screen'>
           <Contact />
         </div>
       </div>
